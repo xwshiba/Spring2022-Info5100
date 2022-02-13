@@ -1,6 +1,6 @@
 package neu.edu;
 
-import models.Parallelogram;
+import models.Rhombus;
 import models.Player;
 import models.Student;
 import models.Triangle;
@@ -19,7 +19,7 @@ public class Main {
         System.out.println(" Roll number of the second student: "+ student2.printRoll());
         System.out.println(" Name of the second student: "+ student2.printName());
 
-        Parallelogram sq = new Parallelogram(4f);
+        Rhombus sq = new Rhombus(4f);
         sq.getPerimeter();
         sq.getArea();
         System.out.println(sq.printShape());

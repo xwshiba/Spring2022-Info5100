@@ -8,6 +8,9 @@ import models.Triangle;
 import java.util.Arrays;
 import java.util.Comparator;
 
+public class Person
+
+
 public class Main {
 
     public static void main(String[] args) {

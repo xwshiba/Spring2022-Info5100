@@ -20,9 +20,10 @@ public class Main {
         System.out.println(stu3.getName()); // Louis
 
         // Question 2 - Write difference between abstract class and interface.
-        // abstract class can contain attributes and methods that can be override. abstract class cannot be initiated, it can only be 'extended'.
-        // interface can only contain abstract methods that can be override. interface can only be 'implemented' by other classes.
-        // A class (not abstract class) can extend an abstract class and implement an interface at the same time.
+        // abstract class can contain abstract attributes and abstract methods that can be overridden. abstract class cannot be initiated, it can only be 'extended'.
+        // interface can only contain abstract methods that can be overridden. interface can only be 'implemented' by other classes.
+        // A class (not abstract class) can extend an abstract class and implement an interface at the same time, or only extends an abstract class, or implements multiple interfaces.
+        // For example, abstract class can be electronic devices, and Phone class can extend electronic devices. Interface can be iSMS or iCall, and Phone can implement iSMS and iCall.
 
         // Question 3 Test Cases
         Psychiatrist psy = new Psychiatrist();
@@ -40,12 +41,13 @@ public class Main {
         // Question 5:  Singleton: Create a singleton class for Camera  there  would  be  just  one  instance  of  Camera
         // Please see the 'Camera' Singleton Class.
 
+
         // Question 6: String question Test cases
         System.out.println(findLongestSubstring("abcabcbb")); // 3
         System.out.println(findLongestSubstring("bbbbb")); // 1
         System.out.println(findLongestSubstring("pwwkew")); // 3
         System.out.println(findLongestSubstring("")); // 0
-        System.out.println(findLongestSubstring("abcdefg")); // 7
+        System.out.println(findLongestSubstring("abcdefgggggggg")); // 7
     }
 
     public static int findLongestSubstring(String s){

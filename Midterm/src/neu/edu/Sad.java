@@ -5,23 +5,22 @@ public class Sad extends Moody{
     public String subjectName;
 
     public Sad(String subjectName){
-        mood = "Sad";
+        mood = "sad";
         this.subjectName = subjectName;
     }
 
     @Override
     public String getMood(){
-        String sadString = "'waah' 'boo hoo' 'weep' 'sob'";
-        return sadString;
+        return "I feel " + mood + " today";
     }
 
     @Override
     public void expressFeelings() {
-        System.out.println("Subject cries a lot");
+        System.out.println("'waah' 'boo hoo' 'weep' 'sob'");
     }
 
     public String toString(){
-        return "I feel " + "sad" + " today";
+        return "Subject cries a lot";
     }
 
     @Override

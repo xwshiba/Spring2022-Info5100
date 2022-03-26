@@ -5,24 +5,21 @@ public class Happy extends Moody{
     public String subjectName;
 
     public Happy(String subjectName){
-        mood = "Happy";
+        mood = "happy";
         this.subjectName = subjectName;
     }
     @Override
     public String getMood() {
-        String happyString = "heeehee....hahahah...HAHAHA!!";
-        return happyString;
+        return "I feel " + mood + " today";
     }
 
     @Override
     public void expressFeelings() {
-        String feelingString = "Subject laughs a lot";
-        System.out.println(feelingString);
-
+        System.out.println("heeehee....hahahah...HAHAHA!!");
     }
 
     public String toString(){
-        return "I feel " + "happy" + " today";
+        return "Subject laughs a lot";
     }
 
     @Override

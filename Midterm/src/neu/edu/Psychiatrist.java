@@ -8,18 +8,14 @@ public class Psychiatrist {
     }
 
     public void examine(Moody moodyObject){
-        System.out.println(toString());
+        System.out.println("How are you feeling today?");
         System.out.println(moodyObject.getMood());
-        System.out.println(moodyObject.toString());
-
+        moodyObject.expressFeelings();
     }
 
     public void observe(Moody moodyObject){
         System.out.print("Observation: ");
-        moodyObject.expressFeelings();
-    }
+        System.out.println(moodyObject.toString());
 
-    public String toString(){
-        return "How are you feeling today?";
     }
 }

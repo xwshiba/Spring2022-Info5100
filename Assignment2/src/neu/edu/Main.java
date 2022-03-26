@@ -1,14 +1,12 @@
 package neu.edu;
 
-import models.Rhombus;
 import models.Player;
+import models.Rhombus;
 import models.Student;
 import models.Triangle;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
-public class Person
 
 
 public class Main {
@@ -20,6 +18,8 @@ public class Main {
 
         Student student2 = new Student(student1);
         System.out.println(" Roll number of the second student: "+ student2.printRoll());
+        System.out.println(" Name of the second student: "+ student2.printName());
+        student2.setName("Jimmy");
         System.out.println(" Name of the second student: "+ student2.printName());
 
         Rhombus sq = new Rhombus(4f);
